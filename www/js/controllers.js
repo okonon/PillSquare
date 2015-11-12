@@ -68,11 +68,23 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('ChatDetailCtrl', function($sce, $scope, $stateParams, Patient) {
+.controller('ChatDetailCtrl', function($sce, $scope, $stateParams, $ionicLoading, Patient, Medications) {
   $scope.pat = Patient.get($stateParams.chatId);
-  $scope.htmlSafe = function(strHtml){
-    return $sce.trustAsHtml(strHtml);
-  };
+
+  Medications.search($stateParams.chatId).then(function(res){
+    $scope.medications = res;
+    $ionicLoading.hide();
+  },function(err){
+    console.log(err);
+    $ionicLoading.hide();
+  });
+  //$scope.htmlSafe = function(strHtml){
+  //  return $sce.trustAsHtml(strHtml);
+  //};
+})
+
+.controller('MedicationDetailCtrl', function($sce, $scope, $stateParams, $ionicLoading, Medications) {
+  $scope.med = Medications.get($stateParams.medId);
 })
 
 .controller('AccountCtrl', function($scope) {

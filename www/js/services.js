@@ -87,4 +87,41 @@ angular.module('starter.services', [])
       return null;
     }
   };
-});
+})
+  .factory('Medications', function(CONSTANTS, $http, $q) {
+    var _medications = [];
+    return {
+      search: function(patId) {
+        var deferred = $q.defer();
+        if(_medications.length > 0){
+          return deferred.resolve(_medications);
+        }
+        var url = CONSTANTS.API_BASE + '/MedicationPrescription?'
+          + 'patient=' + patId
+          + '&status=active';
+        var req = {
+          method: 'GET',
+          url: url
+        };
+        $http(req).
+        success(function (response, status, headers, config) {
+          console.log(response.entry);
+          _medications = response.entry;
+          deferred.resolve(response.entry);
+        }).
+        error(function (data, status, headers, config) {
+          deferred.reject('There was a problem with search request...');
+          console.log(data, status, headers, config);
+        });
+        return deferred.promise;
+      },
+      get: function(medId) {
+        for (var i = 0; i < _medications.length; i++) {
+          if (_medications[i].resource.id === medId) {
+            return _medications[i];
+          }
+        }
+        return null;
+      }
+    };
+  });

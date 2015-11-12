@@ -65,7 +65,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
-
+    .state('app.medication-detail', {
+      url: '/medication-detail/:medId',
+      views: {
+        'tab-dash': {
+          templateUrl: 'templates/medication-detail.html',
+          controller: 'MedicationDetailCtrl'
+        }
+      }
+    })
   .state('app.chats', {
       url: '/chats',
       views: {
