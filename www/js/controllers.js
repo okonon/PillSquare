@@ -98,7 +98,7 @@ angular.module('starter.controllers', [])
     }
 
       $scope.showModal();
-    };
+    ;
 
 
     // Create the login modal that we will use later
