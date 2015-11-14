@@ -65,6 +65,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
+    .state('app.medication-listing', {
+      url: '/medication-listing/:patId',
+      views: {
+        'tab-home': {
+          templateUrl: 'templates/medication-listing.html',
+          controller: 'MedicationListingCtrl'
+        }
+      }
+    })
     .state('app.medication-detail', {
       url: '/medication-detail/:medId',
       views: {
@@ -104,6 +113,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/dash');
+  //
+  $urlRouterProvider.otherwise('/app/medication-listing/1316024');
 
 });

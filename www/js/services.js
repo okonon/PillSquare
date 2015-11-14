@@ -76,13 +76,13 @@ angular.module('starter.services', [])
         });
         return deferred.promise;
       },
-      searchById: function(patId) {
+      searchById: function(patId) {  //peters: 1316024
         var deferred = $q.defer();
         if(_patients.length > 0){
           return deferred.resolve(_patients);
-        }
+        } //Patient?_id
         var url = CONSTANTS.API_BASE + '/Patient?'
-          + 'identifier=' + patId;
+          + '_id=' + patId;
         var req = {
           method: 'GET',
           url: url
