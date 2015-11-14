@@ -76,13 +76,13 @@ angular.module('starter.services', [])
         });
         return deferred.promise;
       },
-      searchById: function(patid) {
+      searchById: function(patId) {
         var deferred = $q.defer();
         if(_patients.length > 0){
           return deferred.resolve(_patients);
         }
         var url = CONSTANTS.API_BASE + '/Patient?'
-          + 'identifier=' + patid;
+          + 'identifier=' + patId;
         var req = {
           method: 'GET',
           url: url
@@ -98,8 +98,6 @@ angular.module('starter.services', [])
           deferred.reject('There was a problem with search request...');
           console.log(data, status, headers, config);
         });
-
-
         return deferred.promise;
       },
       get: function(patId) {
