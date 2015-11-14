@@ -34,7 +34,7 @@ angular.module('starter.controllers', [])
   })
 
 
-  .controller('DashCtrl', function($scope, Patient, $ionicLoading) {
+  .controller('DashCtrl', function($scope, $state, Patient, $ionicLoading) {
     $scope.data = {
       strSearch: ''
     };
@@ -52,6 +52,41 @@ angular.module('starter.controllers', [])
     $scope.clearSearch = function(){
       $scope.data.strSearch = '';
     };
+
+    $scope.goToDetailList = function(timeOfDay){
+      switch(timeOfDay) {
+        case 'breakfast':
+          console.log('*** breakfast');
+          $state.go('',{});
+          break;
+        case 'lunch':
+          console.log('*** lunch');
+          break;
+        case 'dinner':
+          console.log('*** dinner');
+          break;
+      }
+      console.log(timeOfDay);
+      $state.go('app.timeofday-detail',{timeOfDayName: timeOfDay});
+    };
+
+  })
+
+  .controller('TimeOfDayDetailCtrl', function($sce, $scope, $stateParams, $ionicLoading, Patient, Medications) {
+    $scope.timeOfDayName = Patient.get($stateParams.timeOfDayName);
+
+    console.log('********** timeOfDayName: ' + $scope.timeOfDayName);
+
+    /*Medications.search($stateParams.chatId).then(function(res){
+      $scope.medications = res;
+      $ionicLoading.hide();
+    },function(err){
+      console.log(err);
+      $ionicLoading.hide();
+    });*/
+    //$scope.htmlSafe = function(strHtml){
+    //  return $sce.trustAsHtml(strHtml);
+    //};
   })
 
 .controller('ChatsCtrl', function($scope, Notifications) {
@@ -67,6 +102,7 @@ angular.module('starter.controllers', [])
     Notifications.remove(notification);
   };
 })
+
 
 .controller('ChatDetailCtrl', function($sce, $scope, $stateParams, $ionicLoading, Patient, Medications) {
   $scope.pat = Patient.get($stateParams.chatId);

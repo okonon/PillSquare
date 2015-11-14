@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0df8a18-e64a-4694-8dba-5bdbe9dc621a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/templates/timeofday-detail.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/MedGlue.iml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/app.js" afterPath="$PROJECT_DIR$/www/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/js/controllers.js" afterPath="$PROJECT_DIR$/www/js/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/templates/all-meds.html" afterPath="$PROJECT_DIR$/www/templates/all-meds.html" />
     </list>
     <ignored path="MedGlue.iws" />
@@ -27,9 +33,15 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-50.555557">
-              <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
-              <folding />
+            <state vertical-scroll-proportion="-58.333332">
+              <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
+              <folding>
+                <marker date="1447528943000" expanded="true" signature="1253:1494" placeholder="//..." />
+                <marker date="1447528943000" expanded="true" signature="1583:1693" placeholder="{&quot;url&quot;: '/app'...}" />
+                <marker date="1447528943000" expanded="true" signature="1763:1912" placeholder="{&quot;url&quot;: '/dash'...}" />
+                <marker date="1447528943000" expanded="true" signature="1794:1908" placeholder="{...}" />
+                <marker date="1447528943000" expanded="true" signature="1814:1902" placeholder="{&quot;templateUrl&quot;: 'templates/all-meds.html'...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,8 +59,8 @@
       <file leaf-file-name="all-meds.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/templates/all-meds.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39325842">
-              <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.101123594">
+              <caret line="94" column="73" selection-start-line="94" selection-start-column="73" selection-end-line="94" selection-end-column="73" />
               <folding>
                 <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#1;n#span#0;n#div#1;n#div#0;n#div#0;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
@@ -93,27 +105,19 @@
         <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+              <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
               <folding>
-                <marker date="1447525998000" expanded="true" signature="123:953" placeholder="{...}" />
-                <marker date="1447525998000" expanded="true" signature="299:326" placeholder="{...}" />
-                <marker date="1447525998000" expanded="true" signature="471:505" placeholder="{...}" />
-                <marker date="1447525998000" expanded="true" signature="704:948" placeholder="{...}" />
-                <marker date="1447525998000" expanded="true" signature="765:869" placeholder="//..." />
-                <marker date="1447525998000" expanded="true" signature="896:934" placeholder="{...}" />
-                <marker date="1447525998000" expanded="true" signature="1024:1458" placeholder="{...}" />
-                <marker date="1447525998000" expanded="true" signature="1044:1071" placeholder="{&quot;strSearch&quot;: ''...}" />
-                <marker date="1447525998000" expanded="true" signature="1118:1367" placeholder="{...}" />
-                <marker date="1447525998000" expanded="true" signature="1210:1280" placeholder="{...}" />
-                <marker date="1447525998000" expanded="true" signature="1294:1359" placeholder="{...}" />
-                <marker date="1447525998000" expanded="true" signature="1412:1453" placeholder="{...}" />
-                <marker date="1447525998000" expanded="true" signature="1518:1982" placeholder="{...}" />
-                <marker date="1447525998000" expanded="true" signature="1522:1846" placeholder="//..." />
-                <marker date="1447525998000" expanded="true" signature="1934:1979" placeholder="{...}" />
-                <marker date="1447525998000" expanded="true" signature="2089:2421" placeholder="{...}" />
-                <marker date="1447525998000" expanded="true" signature="2201:2262" placeholder="{...}" />
-                <marker date="1447525998000" expanded="true" signature="2276:2329" placeholder="{...}" />
-                <marker date="1447525998000" expanded="true" signature="2334:2419" placeholder="//..." />
+                <marker date="1447528943000" expanded="true" signature="123:953" placeholder="{...}" />
+                <marker date="1447528943000" expanded="true" signature="299:326" placeholder="{...}" />
+                <marker date="1447528943000" expanded="true" signature="471:505" placeholder="{...}" />
+                <marker date="1447528943000" expanded="true" signature="566:600" placeholder="{...}" />
+                <marker date="1447528943000" expanded="true" signature="704:948" placeholder="{...}" />
+                <marker date="1447528943000" expanded="true" signature="765:869" placeholder="//..." />
+                <marker date="1447528943000" expanded="true" signature="896:934" placeholder="{...}" />
+                <marker date="1447528943000" expanded="true" signature="3113:3445" placeholder="{...}" />
+                <marker date="1447528943000" expanded="true" signature="3225:3286" placeholder="{...}" />
+                <marker date="1447528943000" expanded="true" signature="3300:3353" placeholder="{...}" />
+                <marker date="1447528943000" expanded="true" signature="3358:3443" placeholder="//..." />
               </folding>
             </state>
           </provider>
@@ -186,102 +190,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedGlue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedGlue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedGlue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedGlue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedGlue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedGlue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedGlue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedGlue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedGlue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedGlue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedGlue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MedGlue" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -346,6 +254,9 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="e0df8a18-e64a-4694-8dba-5bdbe9dc621a" name="Default" comment="" />
@@ -390,7 +301,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="100" column="32" selection-start-line="100" selection-start-column="21" selection-end-line="100" selection-end-column="32" />
-          <folding />
+          <folding>
+            <marker date="1447528943000" expanded="true" signature="1253:1494" placeholder="//..." />
+            <marker date="1447528943000" expanded="true" signature="1583:1693" placeholder="{&quot;url&quot;: '/app'...}" />
+            <marker date="1447528943000" expanded="true" signature="1763:1912" placeholder="{&quot;url&quot;: '/dash'...}" />
+            <marker date="1447528943000" expanded="true" signature="1794:1908" placeholder="{...}" />
+            <marker date="1447528943000" expanded="true" signature="1814:1902" placeholder="{&quot;templateUrl&quot;: 'templates/all-meds.html'...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -415,25 +332,17 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
           <folding>
-            <marker date="1447525998000" expanded="true" signature="123:953" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="299:326" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="471:505" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="704:948" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="765:869" placeholder="//..." />
-            <marker date="1447525998000" expanded="true" signature="896:934" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="1024:1458" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="1044:1071" placeholder="{&quot;strSearch&quot;: ''...}" />
-            <marker date="1447525998000" expanded="true" signature="1118:1367" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="1210:1280" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="1294:1359" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="1412:1453" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="1518:1982" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="1522:1846" placeholder="//..." />
-            <marker date="1447525998000" expanded="true" signature="1934:1979" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="2089:2421" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="2201:2262" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="2276:2329" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="2334:2419" placeholder="//..." />
+            <marker date="1447528943000" expanded="true" signature="123:953" placeholder="{...}" />
+            <marker date="1447528943000" expanded="true" signature="299:326" placeholder="{...}" />
+            <marker date="1447528943000" expanded="true" signature="471:505" placeholder="{...}" />
+            <marker date="1447528943000" expanded="true" signature="566:600" placeholder="{...}" />
+            <marker date="1447528943000" expanded="true" signature="704:948" placeholder="{...}" />
+            <marker date="1447528943000" expanded="true" signature="765:869" placeholder="//..." />
+            <marker date="1447528943000" expanded="true" signature="896:934" placeholder="{...}" />
+            <marker date="1447528943000" expanded="true" signature="3113:3445" placeholder="{...}" />
+            <marker date="1447528943000" expanded="true" signature="3225:3286" placeholder="{...}" />
+            <marker date="1447528943000" expanded="true" signature="3300:3353" placeholder="{...}" />
+            <marker date="1447528943000" expanded="true" signature="3358:3443" placeholder="//..." />
           </folding>
         </state>
       </provider>
@@ -449,27 +358,19 @@
     <entry file="file://$PROJECT_DIR$/www/js/controllers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+          <caret line="146" column="0" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
           <folding>
-            <marker date="1447525998000" expanded="true" signature="123:953" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="299:326" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="471:505" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="704:948" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="765:869" placeholder="//..." />
-            <marker date="1447525998000" expanded="true" signature="896:934" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="1024:1458" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="1044:1071" placeholder="{&quot;strSearch&quot;: ''...}" />
-            <marker date="1447525998000" expanded="true" signature="1118:1367" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="1210:1280" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="1294:1359" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="1412:1453" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="1518:1982" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="1522:1846" placeholder="//..." />
-            <marker date="1447525998000" expanded="true" signature="1934:1979" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="2089:2421" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="2201:2262" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="2276:2329" placeholder="{...}" />
-            <marker date="1447525998000" expanded="true" signature="2334:2419" placeholder="//..." />
+            <marker date="1447528943000" expanded="true" signature="123:953" placeholder="{...}" />
+            <marker date="1447528943000" expanded="true" signature="299:326" placeholder="{...}" />
+            <marker date="1447528943000" expanded="true" signature="471:505" placeholder="{...}" />
+            <marker date="1447528943000" expanded="true" signature="566:600" placeholder="{...}" />
+            <marker date="1447528943000" expanded="true" signature="704:948" placeholder="{...}" />
+            <marker date="1447528943000" expanded="true" signature="765:869" placeholder="//..." />
+            <marker date="1447528943000" expanded="true" signature="896:934" placeholder="{...}" />
+            <marker date="1447528943000" expanded="true" signature="3113:3445" placeholder="{...}" />
+            <marker date="1447528943000" expanded="true" signature="3225:3286" placeholder="{...}" />
+            <marker date="1447528943000" expanded="true" signature="3300:3353" placeholder="{...}" />
+            <marker date="1447528943000" expanded="true" signature="3358:3443" placeholder="//..." />
           </folding>
         </state>
       </provider>
@@ -492,9 +393,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-50.555557">
-          <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
-          <folding />
+        <state vertical-scroll-proportion="-58.333332">
+          <caret line="105" column="9" selection-start-line="105" selection-start-column="9" selection-end-line="105" selection-end-column="9" />
+          <folding>
+            <marker date="1447528943000" expanded="true" signature="1253:1494" placeholder="//..." />
+            <marker date="1447528943000" expanded="true" signature="1583:1693" placeholder="{&quot;url&quot;: '/app'...}" />
+            <marker date="1447528943000" expanded="true" signature="1763:1912" placeholder="{&quot;url&quot;: '/dash'...}" />
+            <marker date="1447528943000" expanded="true" signature="1794:1908" placeholder="{...}" />
+            <marker date="1447528943000" expanded="true" signature="1814:1902" placeholder="{&quot;templateUrl&quot;: 'templates/all-meds.html'...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -513,8 +420,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/templates/all-meds.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39325842">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.101123594">
+          <caret line="94" column="73" selection-start-line="94" selection-start-column="73" selection-end-line="94" selection-end-column="73" />
           <folding>
             <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#1;n#span#0;n#div#1;n#div#0;n#div#0;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
