@@ -41,7 +41,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
               if (err) {
                 alert('There was an error sending this message');
               } else {
-                alert('success!');
+                //alert('success!');
               }
             });
 
@@ -54,7 +54,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
               if (err) {
                 alert('There was an error sending this message');
               } else {
-                alert('success!');
+                //alert('success!');
               }
             });
 

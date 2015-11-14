@@ -115,9 +115,7 @@ angular.module('starter.services', [])
     return {
       search: function(patId) {
         var deferred = $q.defer();
-        if(_medications.length > 0){
-          return deferred.resolve(_medications);
-        }
+
         var url = CONSTANTS.API_BASE + '/MedicationPrescription?'
           + 'patient=' + patId
           + '&status=active';

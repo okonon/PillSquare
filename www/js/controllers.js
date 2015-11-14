@@ -138,9 +138,6 @@ angular.module('starter.controllers', [])
     };
 
     // For example's sake, hide the sheet after two seconds
-    $timeout(function() {
-      hideSheet();
-    }, 2000);
 
   })
 
