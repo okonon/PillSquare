@@ -125,8 +125,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   // if none of the above states are matched, use this as the fallback
   //
 
-  //$urlRouterProvider.otherwise('/app/medication-listing/1316024');
+  //$urlRouterProvider.otherwise('/app/medication-listing/3860007');
 
-  $urlRouterProvider.otherwise('/app/dash');
+  $urlRouterProvider.otherwise('app/dash/medication-listing/3860007');
 
 });
