@@ -49,8 +49,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   .state('app.dash', {
     url: '/dash',
     views: {
-      'tab-dash': {
-        templateUrl: 'templates/tab-dash.html',
+      'tab-home': {
+        templateUrl: 'templates/tab-home.html',
         controller: 'DashCtrl'
       }
     }
@@ -59,7 +59,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     .state('app.dash-detail', {
       url: '/dash-detail/:chatId',
       views: {
-        'tab-dash': {
+        'tab-home': {
           templateUrl: 'templates/notification-detail.html',
           controller: 'ChatDetailCtrl'
         }
@@ -68,7 +68,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     .state('app.medication-detail', {
       url: '/medication-detail/:medId',
       views: {
-        'tab-dash': {
+        'tab-home': {
           templateUrl: 'templates/medication-detail.html',
           controller: 'MedicationDetailCtrl'
         }
