@@ -57,7 +57,6 @@ angular.module('starter.controllers', [])
       switch(timeOfDay) {
         case 'breakfast':
           console.log('*** breakfast');
-          $state.go('',{});
           break;
         case 'lunch':
           console.log('*** lunch');
@@ -73,17 +72,25 @@ angular.module('starter.controllers', [])
   })
 
   .controller('TimeOfDayDetailCtrl', function($sce, $scope, $stateParams, $ionicLoading, Patient, Medications) {
-    $scope.timeOfDayName = Patient.get($stateParams.timeOfDayName);
+    //$scope.timeOfDayName = Patient.get($stateParams.timeOfDayName);
 
-    console.log('********** timeOfDayName: ' + $scope.timeOfDayName);
+    console.log('********** timeOfDayName: ' + $stateParams.timeOfDayName);
 
-    /*Medications.search($stateParams.chatId).then(function(res){
+    Medications.search('3860007').then(function(res){
       $scope.medications = res;
       $ionicLoading.hide();
     },function(err){
       console.log(err);
       $ionicLoading.hide();
-    });*/
+    });
+
+    $scope.snoozeMed = function(){
+      console.log('***** fired snoozeMed');
+    };
+    $scope.skipMed = function(){
+      console.log('***** fired skipMed');
+    };
+
     //$scope.htmlSafe = function(strHtml){
     //  return $sce.trustAsHtml(strHtml);
     //};
