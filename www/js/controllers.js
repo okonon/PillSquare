@@ -89,7 +89,11 @@ angular.module('starter.controllers', [])
     };
     $scope.skipMed = function(){
       console.log('***** fired skipMed');
-    };
+    }
+    $scope.swipeLeft = function(med){
+      console.log(med);
+      med.Swipped =true;
+    }
 
     //$scope.htmlSafe = function(strHtml){
     //  return $sce.trustAsHtml(strHtml);
