@@ -13,12 +13,12 @@
         </button>
         <label class="item item-input item-floating-label">
           <span class="input-label">Other reason:</span>
-          <input type="text" placeholder="Other reason:">
+          <input type="text" ng-model="data.otherReasonText" placeholder="Other reason:">
         </label>
       </div>
     <!--</form>-->
     <label class="item">
-      <button class="button button-block button-positive"  ng-click="closeModal()">Done</button>
+      <button class="button button-block button-positive"  ng-click="doneSkipping()">Done</button>
     </label>
   </ion-content>
 </ion-modal-view>

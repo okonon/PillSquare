@@ -45,19 +45,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
               }
             });
 
-            // Message to Josh Yahoo
-            TigerText.message({
-              recipient: '445f28c1-5338-4af5-81bf-969284b69f14',
-              organization_id: 'VPLWeAVLCxk8Vm8u5gEHT5GU',
-              body: 'This is the message text'
-            }, function (err, client_id) {
-              if (err) {
-                alert('There was an error sending this message');
-              } else {
-                //alert('success!');
-              }
-            });
-
           }
         });
     }

@@ -76,7 +76,9 @@ angular.module('starter.controllers', [])
 
   .controller('TimeOfDayDetailCtrl', function($timeout, $ionicActionSheet, $ionicModal, $sce, $scope, $stateParams, $ionicLoading, Patient, Medications) {
     //$scope.timeOfDayName = Patient.get($stateParams.timeOfDayName);
-
+    $scope.data = {
+      otherReasonText: ''
+    };
     console.log('********** timeOfDayName: ' + $stateParams.timeOfDayName);
 
     Medications.search('3860007').then(function(res){
@@ -118,13 +120,14 @@ angular.module('starter.controllers', [])
       $scope.modal.show();
     };
 
+    var buttons = [
+      { text: 'No time' },
+      { text: 'Side effects' },
+      { text: 'Do not have it with me' }
+    ];
     $scope.chooseReason = function(){
       var hideSheet = $ionicActionSheet.show({
-        buttons: [
-          { text: 'No time' },
-          { text: 'Side effects' },
-          { text: 'Do not have it with me' }
-        ],
+        buttons: buttons,
         /*destructiveText: 'Skip',*/
         titleText: 'Skip reason',
         cancelText: 'Cancel',
@@ -132,12 +135,30 @@ angular.module('starter.controllers', [])
           // add cancel code..
         },
         buttonClicked: function(index) {
+          $scope.data.otherReasonText = buttons[index].text;
+          $scope.doneSkipping();
           return true;
         }
       });
     };
 
-    // For example's sake, hide the sheet after two seconds
+    $scope.doneSkipping = function(){
+      // Message to Josh Yahoo
+      TigerText.message({
+        recipient: '445f28c1-5338-4af5-81bf-969284b69f14',
+        organization_id: 'VPLWeAVLCxk8Vm8u5gEHT5GU',
+        body: 'Zack skipped his med because: ' + $scope.data.otherReasonText
+      }, function (err, client_id) {
+        if (err) {
+          alert('There was an error sending this message');
+        } else {
+          console.log('success!');
+        }
+      });
+
+      $scope.closeModal();
+
+    };
 
   })
 
