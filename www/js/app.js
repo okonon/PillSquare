@@ -127,7 +127,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     .state('app.medication-listing', {
       url: '/medication-listing/:patId',
       views: {
-        'tab-home': {
+        'tab-notifications': {
           templateUrl: 'templates/medication-listing.html',
           controller: 'MedicationListingCtrl'
         }
@@ -136,7 +136,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     .state('app.medication-detail', {
       url: '/medication-detail/:medId',
       views: {
-        'tab-home': {
+        'tab-notifications': {
           templateUrl: 'templates/medication-detail.html',
           controller: 'MedicationDetailCtrl'
         }
@@ -175,8 +175,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   //
 
 
-  $urlRouterProvider.otherwise('/app/medication-listing/3860007');
+  //$urlRouterProvider.otherwise('/app/medication-listing/3860007');
 
-  //$urlRouterProvider.otherwise('/app/dash');
+  $urlRouterProvider.otherwise('/app/dash');
 
 });
