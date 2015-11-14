@@ -22,7 +22,7 @@
       <div class="item item-divider">
         List of current meds:
       </div>
-      <ion-item class="item-icon-right" href="#/app/medication-detail/{{med.resource.id}}"
+      <ion-item class="item-icon-right"
                 ng-repeat="med in medications track by $index" on-swipe-right="swipeLeft(med)">
         <span ng-if="(!med.Swipped)">
         {{med.resource.contained[0].name}}

@@ -6,19 +6,19 @@
     </div>
   </ion-header-bar>
   <ion-content>
-    <form ng-submit="chooseReason()">
+    <!--<form ng-submit="chooseReason()">-->
       <div class="list">
-        <button class="button button-full button-outline button-positive">
+        <button ng-click="chooseReason()" class="button button-full button-outline button-positive">
           Choose reason
         </button>
         <label class="item item-input item-floating-label">
           <span class="input-label">Other reason:</span>
           <input type="text" placeholder="Other reason:">
         </label>
-        <label class="item">
-          <button class="button button-block button-positive" type="submit">Done</button>
-        </label>
       </div>
-    </form>
+    <!--</form>-->
+    <label class="item">
+      <button class="button button-block button-positive"  ng-click="closeModal()">Done</button>
+    </label>
   </ion-content>
 </ion-modal-view>
