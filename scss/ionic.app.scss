@@ -20,11 +20,12 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
-
-.status-okay {
-  background-color: green;
+.status-noset {
+  backgroud-color: red !important ;
+  border:1px solid red;
 }
 
-.status-expired {
-  backgroud-color: red;
+.status-set {
+  background-color: #89ED9D;
 }
+

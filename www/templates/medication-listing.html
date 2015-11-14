@@ -6,17 +6,20 @@
 -->
 <ion-view view-title="{{pat.resource.name[0].text}}">
   <ion-content>
-    <div class="list card">
-    <div class="item item-avatar">
+    <!--<div class="list card">
+     <div class="item item-avatar">
       <img ng-src="https://randomuser.me/api/portraits/thumb/men/0.jpg" style="width: 64px; height: 64px">
       <h2>{{pat.resource.name[0].text}}</h2>
     </div>
-      </div>
-    <ion-list>
+      </div> 19861951
+    <ion-list>-->
       <ion-item class="item-icon-right" href="#/app/medication-detail/{{med.resource.id}}"
                 ng-repeat="med in medications track by $index">
-        {{med.resource.contained[0].name}}
-        <i class="icon ion-chevron-right icon-accessory"></i>
+        <p  >
+          {{med.resource.contained[0].name}} : {{med.resource.id}}
+          <br>Dosage: {{med.resource.dosageInstruction[0].text}}
+          <i class="icon" ng-class="{'ion-checkmark-circled balanced':$index==1,'ion-close-circled assertive':$index!=1 }"></i>
+        </p>
       </ion-item>
     </ion-list>
   </ion-content>
