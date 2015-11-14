@@ -32,7 +32,7 @@
       My Status: Your on fire!
     </div>
     <div class="list card">
-      <div class="item item-body">
+      <div class="item item-body" ng-click="goToDetailList('breakfast');">
         <div class="row">
           <div class="col col-33">Breakfast</div>
           <div class="col">
@@ -47,10 +47,10 @@
       </div>
     </div>
     <div class="list card">
-      <div class="item item-body">
+      <div class="item item-body" ng-click="goToDetailList('lunch')">
         <div class="row">
           <div class="col col-33">Lunch</div>
-          <div class="col">
+          <div class="col" ng-class="">
             <img class="resizeImgPill" ng-src="/img/blue-red-capsule.png">
             <img class="resizeImgPill" ng-src="/img/blue-red-capsule.png">
             <img class="resizeImgPill" ng-src="/img/blue-red-capsule.png">
@@ -59,9 +59,9 @@
       </div>
     </div>
     <div class="list card">
-      <div class="item item-body">
-        <div class="row">ß
-        <div class="row">ß
+      <div class="item item-body" ng-click="goToDetailList('dinner')">
+        <div class="row">
+        <div class="row">
           <div class="col col-33">Dinner</div>
           <div class="col">
             <img class="resizeImgPill" ng-src="/img/blue-red-capsule.png">
