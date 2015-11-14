@@ -50,44 +50,68 @@ angular.module('starter.services', [])
 })
 
   .factory('Patient', function(CONSTANTS, $http, $q) {
-  var _patients = [];
-  return {
-    search: function(strPatName) {
-      var deferred = $q.defer();
-      if(_patients.length > 0){
-        return deferred.resolve(_patients);
-      }
-      var url = CONSTANTS.API_BASE + '/Patient?'
-        + 'name=' + encodeURIComponent(strPatName);
-      var req = {
-        method: 'GET',
-        url: url
-      };
-
-      $http(req).
-      success(function (response, status, headers, config) {
-        console.log(response.entry);
-        _patients = response.entry;
-        deferred.resolve(response.entry);
-      }).
-      error(function (data, status, headers, config) {
-        deferred.reject('There was a problem with search request...');
-        console.log(data, status, headers, config);
-      });
-
-
-      return deferred.promise;
-    },
-    get: function(patId) {
-      for (var i = 0; i < _patients.length; i++) {
-        if (_patients[i].resource.id === patId) {
-          return _patients[i];
+    var _patients = [];
+    return {
+      search: function(strPatName) {
+        var deferred = $q.defer();
+        if(_patients.length > 0){
+          return deferred.resolve(_patients);
         }
+        var url = CONSTANTS.API_BASE + '/Patient?'
+          + 'name=' + encodeURIComponent(strPatName);
+        var req = {
+          method: 'GET',
+          url: url
+        };
+
+        $http(req).
+        success(function (response, status, headers, config) {
+          console.log(response.entry);
+          _patients = response.entry;
+          deferred.resolve(response.entry);
+        }).
+        error(function (data, status, headers, config) {
+          deferred.reject('There was a problem with search request...');
+          console.log(data, status, headers, config);
+        });
+        return deferred.promise;
+      },
+      searchById: function(patid) {
+        var deferred = $q.defer();
+        if(_patients.length > 0){
+          return deferred.resolve(_patients);
+        }
+        var url = CONSTANTS.API_BASE + '/Patient?'
+          + 'identifier=' + patid;
+        var req = {
+          method: 'GET',
+          url: url
+        };
+
+        $http(req).
+        success(function (response, status, headers, config) {
+          console.log(response.entry);
+          _patients = response.entry;
+          deferred.resolve(response.entry);
+        }).
+        error(function (data, status, headers, config) {
+          deferred.reject('There was a problem with search request...');
+          console.log(data, status, headers, config);
+        });
+
+
+        return deferred.promise;
+      },
+      get: function(patId) {
+        for (var i = 0; i < _patients.length; i++) {
+          if (_patients[i].resource.id === patId) {
+            return _patients[i];
+          }
+        }
+        return null;
       }
-      return null;
-    }
-  };
-})
+    };
+  })
   .factory('Medications', function(CONSTANTS, $http, $q) {
     var _medications = [];
     return {
