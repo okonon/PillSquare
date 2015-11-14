@@ -83,6 +83,17 @@ angular.module('starter.controllers', [])
   //};
 })
 
+.controller('MedicationListingCtrl', function($sce, $scope, $stateParams, $ionicLoading, Patient, Medications) {
+  $scope.pat = Patient.get($stateParams.patId);
+
+  Medications.search($stateParams.patId).then(function(res){
+    $scope.medications = res;
+    $ionicLoading.hide();
+  },function(err){
+    console.log(err);
+    $ionicLoading.hide();
+  });
+})
 .controller('MedicationDetailCtrl', function($sce, $scope, $stateParams, $ionicLoading, Medications) {
   $scope.med = Medications.get($stateParams.medId);
 })
