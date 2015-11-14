@@ -124,7 +124,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   // if none of the above states are matched, use this as the fallback
   //
+<<<<<<< HEAD
+=======
   //$urlRouterProvider.otherwise('/app/medication-listing/1316024');
+>>>>>>> 05aff60325502e73bb5ac2a3ad024c6b58e1da30
   $urlRouterProvider.otherwise('/app/dash');
 
 });
