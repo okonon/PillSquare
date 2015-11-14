@@ -1,0 +1,24 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Why are you skipping?</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeModal()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="chooseReason()">
+      <div class="list">
+        <button class="button button-full button-outline button-positive">
+          Choose reason
+        </button>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Other reason:</span>
+          <input type="text" placeholder="Other reason:">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Log in</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>
