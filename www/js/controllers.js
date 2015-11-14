@@ -57,13 +57,15 @@ angular.module('starter.controllers', [])
     $scope.goToDetailList = function(timeOfDay){
       switch(timeOfDay) {
         case 'breakfast':
-          console.log('*** breakfast');
+          $state.go('app.timeofday-detail', {timeOfDayName: timeOfDay});
           break;
         case 'lunch':
           console.log('*** lunch');
+          $state.go('app.timeofday-detail', {timeOfDayName: timeOfDay});
           break;
         case 'dinner':
           console.log('*** dinner');
+          $state.go('app.timeofday-detail', {timeOfDayName: timeOfDay});
           break;
       }
       console.log(timeOfDay);
@@ -90,15 +92,13 @@ angular.module('starter.controllers', [])
     };
     $scope.skipMed = function(){
       console.log('***** fired skipMed');
+      $scope.showModal();
 
     }
     $scope.swipeLeft = function(med){
       console.log(med);
       med.Swipped =true;
     }
-
-      $scope.showModal();
-    ;
 
 
     // Create the login modal that we will use later
