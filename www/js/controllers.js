@@ -9,6 +9,7 @@ angular.module('starter.controllers', [])
       scope: $scope
     }).then(function(modal) {
       $scope.modal = modal;
+      $scope.modal.show();
     });
 
     // Triggered in the login modal to close it
@@ -34,7 +35,7 @@ angular.module('starter.controllers', [])
   })
 
 
-  .controller('DashCtrl', function($scope, Patient, $ionicLoading) {
+  .controller('DashCtrl', function($scope, $state, Patient, $ionicLoading) {
     $scope.data = {
       strSearch: ''
     };
@@ -52,6 +53,95 @@ angular.module('starter.controllers', [])
     $scope.clearSearch = function(){
       $scope.data.strSearch = '';
     };
+
+    $scope.goToDetailList = function(timeOfDay){
+      switch(timeOfDay) {
+        case 'breakfast':
+          console.log('*** breakfast');
+          break;
+        case 'lunch':
+          console.log('*** lunch');
+          break;
+        case 'dinner':
+          console.log('*** dinner');
+          break;
+      }
+      console.log(timeOfDay);
+      $state.go('app.timeofday-detail',{timeOfDayName: timeOfDay});
+    };
+
+  })
+
+  .controller('TimeOfDayDetailCtrl', function($timeout, $ionicActionSheet, $ionicModal, $sce, $scope, $stateParams, $ionicLoading, Patient, Medications) {
+    //$scope.timeOfDayName = Patient.get($stateParams.timeOfDayName);
+
+    console.log('********** timeOfDayName: ' + $stateParams.timeOfDayName);
+
+    Medications.search('3860007').then(function(res){
+      $scope.medications = res;
+      $ionicLoading.hide();
+    },function(err){
+      console.log(err);
+      $ionicLoading.hide();
+    });
+
+    $scope.snoozeMed = function(){
+      console.log('***** fired snoozeMed');
+    };
+    $scope.skipMed = function(){
+      console.log('***** fired skipMed');
+
+    }
+    $scope.swipeLeft = function(med){
+      console.log(med);
+      med.Swipped =true;
+    }
+
+      $scope.showModal();
+    };
+
+
+    // Create the login modal that we will use later
+    $ionicModal.fromTemplateUrl('templates/skip-reason-modal.html', {
+      scope: $scope
+    }).then(function(modal) {
+      $scope.modal = modal;
+    });
+
+    // Triggered in the login modal to close it
+    $scope.closeModal = function() {
+      $scope.modal.hide();
+    };
+
+    // Open the login modal
+    $scope.showModal = function() {
+      $scope.modal.show();
+    };
+
+    $scope.chooseReason = function(){
+      var hideSheet = $ionicActionSheet.show({
+        buttons: [
+          { text: 'No time' },
+          { text: 'Side effects' },
+          { text: 'Do not have it with me' }
+        ],
+        /*destructiveText: 'Skip',*/
+        titleText: 'Skip reason',
+        cancelText: 'Cancel',
+        cancel: function() {
+          // add cancel code..
+        },
+        buttonClicked: function(index) {
+          return true;
+        }
+      });
+    };
+
+    // For example's sake, hide the sheet after two seconds
+    $timeout(function() {
+      hideSheet();
+    }, 2000);
+
   })
 
 .controller('ChatsCtrl', function($scope, Notifications) {
@@ -67,6 +157,7 @@ angular.module('starter.controllers', [])
     Notifications.remove(notification);
   };
 })
+
 
 .controller('ChatDetailCtrl', function($sce, $scope, $stateParams, $ionicLoading, Patient, Medications) {
   $scope.pat = Patient.get($stateParams.chatId);

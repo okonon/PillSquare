@@ -1,0 +1,46 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="{{pat.resource.name[0].text}}">
+  <ion-content>
+    <div class="list card">
+      <div class="item item-avatar">
+        <img ng-src="https://randomuser.me/api/portraits/thumb/men/0.jpg" style="width: 64px; height: 64px">
+        <h2>LUNCH MEDICATIONS</h2>
+        <p><b>TOTAL MEDICATIONS: </b>4</p>
+      </div>
+
+      <div class="item item-body">
+        <!--<div ng-bind-html="htmlSafe(pat.resource.text.div)"></div>-->
+        <p>To mark medication taken - swipe item right, to snooze or skip - swipe left</p>
+      </div>
+    </div>
+    <ion-list>
+      <div class="item item-divider">
+        List of current meds:
+      </div>
+      <ion-item class="item-icon-right" href="#/app/medication-detail/{{med.resource.id}}"
+                ng-repeat="med in medications track by $index" on-swipe-right="swipeLeft(med)">
+        <span ng-if="(!med.Swipped)">
+        {{med.resource.contained[0].name}}
+        <!--<i class="icon ion-chevron-right icon-accessory"></i>-->
+        <ion-option-button class="button-positive" ng-click="snoozeMed()">
+          Snooze
+        </ion-option-button>
+        <ion-option-button class="button-assertive" ng-click="skipMed()">
+          Skip
+        </ion-option-button>
+        </span>
+        <span ng-if="(med.Swipped)">
+          <!--Done-->
+          <div>
+            <img class="resizeSuccess" ng-src="/img/success.png"> Done!
+          </div>
+        </span>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

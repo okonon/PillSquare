@@ -1,9 +1,7 @@
 /* Empty. Add your own CSS if you like */
-.status-noset {
-  backgroud-color: red !important;
-  border:1px solid red;
+.resizeImgPill {
+  width: 50px;
 }
-
-.status-set {
-  background-color: #89ED9D;
+.resizeSuccess {
+  width: 20px;
 }
