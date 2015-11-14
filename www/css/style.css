@@ -1,1 +1,9 @@
 /* Empty. Add your own CSS if you like */
+.status-noset {
+  backgroud-color: red !important;
+  border:1px solid red;
+}
+
+.status-set {
+  background-color: #89ED9D;
+}
