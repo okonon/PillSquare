@@ -14,6 +14,53 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   })
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
+    $(document).ready(function () {
+
+      connect('On9XBkN81KiLhEStjGWqoCRkhwXBuufL', 'Pv8KOLq0TbEUkP479GKMXfuZQNM4yKTa3D6mhWQgOcfUjNNY');
+
+    });
+
+    function connect(key, secret) {
+
+      TigerText.connect({
+          api_key: key,
+          api_secret: secret
+        },
+        function (err) {
+          if (err) {
+            alert('Error connecting');
+            //log(JSON.stringify(err));
+          } else {
+
+            // Message to Oleksiy.Kononenko
+            TigerText.message({
+              recipient: 'bd67f18c-5d57-4189-aa8d-5c700c8e0dc2',
+              organization_id: 'VPLWeAVLCxk8Vm8u5gEHT5GU',
+              body: 'This is the message text'
+            }, function (err, client_id) {
+              if (err) {
+                alert('There was an error sending this message');
+              } else {
+                alert('success!');
+              }
+            });
+
+            // Message to Josh Yahoo
+            TigerText.message({
+              recipient: '445f28c1-5338-4af5-81bf-969284b69f14',
+              organization_id: 'VPLWeAVLCxk8Vm8u5gEHT5GU',
+              body: 'This is the message text'
+            }, function (err, client_id) {
+              if (err) {
+                alert('There was an error sending this message');
+              } else {
+                alert('success!');
+              }
+            });
+
+          }
+        });
+    }
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
     if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
@@ -28,7 +75,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
+
+  $ionicConfigProvider.tabs.position('bottom'); // other values: top
 
   // Ionic uses AngularUI Router which uses the concept of states
   // Learn more here: https://github.com/angular-ui/ui-router
