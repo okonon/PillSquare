@@ -1,0 +1,91 @@
+<ion-view view-title="Dashboard">
+
+  <ion-content>
+    <!--div class="bar bar-header item-input-inset">
+    <label class="item-input-wrapper">
+      <i class="icon ion-ios-search placeholder-icon"></i>
+      <input type="search" ng-model="data.strSearch" ng-change="search()" placeholder="Search">
+    </label>
+    <button class="button button-clear" ng-click="clearSearch()">
+      Cancel
+    </button>
+  </div-->
+    <!--ion-list ng-repeat="pat in patients track by $index">
+      <!--ion-item class="item-avatar item-icon-right" href="#/app/dash-detail/{{pat.resource.id}}">
+        <img ng-src="https://randomuser.me/api/portraits/thumb/men/{{$index}}.jpg">
+        <h2>{{pat.resource.name[0].text}}</h2>
+        <p><b>DOB: </b>{{pat.resource.birthDate}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+    <!--div class="list card" ng-show="!patients.length">
+      <div class="item item-divider">No Patients found</div>
+      <div class="item item-body">
+        <div>
+          It looks like there are no patients have been found for your search criteria.
+        </div>
+      </div>
+    </div-->
+
+    <!-- Gamification icon for "On fire" -->
+    <div class="bar-positive">
+      My Status: Your on fire!
+    </div>
+    <div class="list card">
+      <div class="item item-body">
+        <div class="row">
+          <div class="col col-33">Breakfast</div>
+          <div class="col">
+            <div style="position:relative">
+              <img class="resizeImgPill" ng-src="/img/blue-red-capsule.png">
+              <img style="position:absolute; left:5px; bottom:" class="resizeSuccess" ng-src="/img/success.png">
+            </div>
+            <img class="resizeImgPill" ng-src="/img/blue-red-capsule.png">
+            <img class="resizeImgPill" ng-src="/img/blue-red-capsule.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-body">
+        <div class="row">
+          <div class="col col-33">Lunch</div>
+          <div class="col">
+            <img class="resizeImgPill" ng-src="/img/blue-red-capsule.png">
+            <img class="resizeImgPill" ng-src="/img/blue-red-capsule.png">
+            <img class="resizeImgPill" ng-src="/img/blue-red-capsule.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-body">
+        <div class="row">ß
+        <div class="row">ß
+          <div class="col col-33">Dinner</div>
+          <div class="col">
+            <img class="resizeImgPill" ng-src="/img/blue-red-capsule.png">
+            <img class="resizeImgPill" ng-src="/img/blue-red-capsule.png">
+            <img class="resizeImgPill" ng-src="/img/blue-red-capsule.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider">Lunch</div>
+      <div class="item item-body">
+        <div>
+          Medication
+        </div>
+      </div>
+    </div>
+    <div class="list card">
+      <div class="item item-divider">Dinner</div>
+      <div class="item item-body">
+        <div>
+          Medication
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
