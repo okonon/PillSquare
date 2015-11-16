@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.ionicframework.fihrdemoionic903028" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>fihr-demo-ionic</name>
+<widget id="org.baystatehealth.pillsqare" version="0.9.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>PillSquare</name>
     <description>
-        An Ionic Framework and Cordova project.
+        Medicaion adhearance app.
     </description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">
-      Ionic Framework Team
+    <author email="oleksiy.kononenko@baystatehealth.org" href="http://www.hackingpediatrics.com/">
+      Boston Children's Hospital, BaystateHealth, SMC, Cerner
     </author>
     <content src="index.html" />
   <access origin="*" />

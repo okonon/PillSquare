@@ -7,7 +7,8 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   .constant("CONSTANTS", {
-    APP_NAME: "FHIR Demo",
+    APP_NAME: "PillSquare",
+    APP_VERSION: "0.9.2",
     CURR_ENV: "dev",
     // API_BASE: "http://localhost:5001",
     API_BASE: "https://fhir-open.sandboxcernerpowerchart.com/may2015/d075cf8b-3261-481d-97e5-ba6c48d3b41f"
